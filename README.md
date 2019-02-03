@@ -17,7 +17,7 @@
 
 ## Main.py
 
-  For this repo there's a `_main.py` file located on the root directory, which demonstrate how the package is called once it's installed, but this should NOT exists by the moment is deployed on the PyPi Repositories.
+  For this repo there's a `_main.py` file located on the root directory, which demonstrate how the package is called once it's installed, but this should NOT exist by the moment is deployed on the PyPi Repositories.
 
   The way is called is explained on the Usage Section of this README file
 
