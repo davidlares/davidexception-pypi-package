@@ -1,0 +1,28 @@
+Generating a PyPi Package
+---
+   - delete the main.py file
+   - rename package folder to "package"
+   - create GH related files -> README.md, LICENSE (MIT)
+   - create a setup.py (root) -> this contains a configuration information for deploy
+
+   from distutils.core import setup
+   setup(
+       name = "davidException",
+       packages = ['package'],
+       version = "1.0",
+       description = "A simple PyPi package for validating tinyInt range value with Python3",
+       author = "David E Lares S",
+       author_email = "david.e.lares@gmail.com",
+       url = "https://github.com/davidlares/davidException",
+       keyword = ['error', 'tinyint']
+   )
+
+  - creates a setup.cfg file -> this contains the location of the README.md
+
+    [metadata]
+    description-file = README.md
+
+  - create a .pypirc file -> this contains the Pypi Auth
+
+  - run python3 setup.py register -r pypi
+  - run python3 setup.py sdist upload -r pypi
